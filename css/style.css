@@ -427,4 +427,19 @@ body {
 img {
   max-width: 100%;
 }
+
+@media (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+  .header-menu {
+    width: 750px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
