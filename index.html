@@ -15,7 +15,7 @@
           <div class="header-menu">
             <a href="#main" class="header-menu__page">Главная</a>
             <!-- /.header-menu__page -->
-            <a href="#layot" class="header-menu__page">Виды макетов</a>
+            <a href="#layout" class="header-menu__page">Виды макетов</a>
             <!-- /.header-menu__page -->
             <a href="#layot" class="header-menu__page">Комплектация макетов</a>
             <!-- /.header-menu__page -->
@@ -62,8 +62,8 @@
         <div class="close-menu">
           <div class="close-menu_box">
               <a href="#main" class="close-menu_item">Главная</a>
-              <a href="#layot" class="close-menu_item">Виды макетов</a>
-              <a href="#layot" class="close-menu_item">Комплектация макетов</a>
+              <a href="#layout" class="close-menu_item">Виды макетов</a>
+              <a href="#layout" class="close-menu_item">Комплектация макетов</a>
               <a href="#portfolio" class="close-menu_item">Реализованные проекты</a>
               <a href="#clients" class="close-menu_item">Наши клиенты</a>
               <a href="#footer" class="close-menu_item">Контакты</a>
@@ -127,6 +127,65 @@
     <!-- /.container -->
   </div>
   <!-- /.main -->
+
+  <section class="layout" id="layout">
+    <div class="container">
+      <h2 class="layout-title">Виды макетов</h2>
+      <h3 class="layout-subtitle">Создаем макеты от небольших домов до космических станций</h3>
+      <div class="layout-wrap">
+        <div class="card wow fadeInUp" data-wow-delay="0.4s">
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <div class="card__img-wrap">
+            <img src="img/layout/layout-01.jpg" alt="Ремонт ванных комнат и с/у" class="card__img">
+          </div>          
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.8s">
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <div class="card__img-wrap">
+            <img src="img/layout/layout-02.jpg" alt="Ремонт комнат и квартир" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт комнат и квартир</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="1.2s">
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <div class="card__img-wrap">
+            <img src="img/layout/layout-03.jpg" alt="Отделка офисных помещений" class="card__img">
+          </div>
+          <h4 class="card__title">Отделка офисных помещений</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="1.6s">
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <div class="card__img-wrap">
+            <img src="img/layout/layout-04.jpg" alt="Ремонт в новостройках" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт в новостройках</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="2s">
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <div class="card__img-wrap">
+            <img src="img/layout/layout-05.jpg" alt="Ремонт кухонь" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт кухонь</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="2.4s">
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <div class="card__img-wrap">
+            <img src="img/layout/layout-06.jpg" alt="Ремонт дач и коттеджей" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт дач и коттеджей</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+      </div>
+      <!-- /.price-wrap -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.price -->
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
@@ -197,6 +256,12 @@
       $('.menu-burger').on('click', function(e) {
         e.preventDefault;
         $('.close-menu').toggleClass('open-menu');
+
+      });
+      $('.close-menu_item').on('click', function(e) {
+        e.preventDefault;
+        $('.close-menu').toggleClass('open-menu');
+        $('.menu-burger').toggleClass('menu-burger-open');
 
       });
     });
