@@ -13,17 +13,17 @@
       <div class="container">
         <div class="header-wrap">
           <div class="header-menu">
-            <a href="#" class="header-menu__page">Главная</a>
+            <a href="#main" class="header-menu__page">Главная</a>
             <!-- /.header-menu__page -->
-            <a href="#" class="header-menu__page">Виды макетов</a>
+            <a href="#layot" class="header-menu__page">Виды макетов</a>
             <!-- /.header-menu__page -->
-            <a href="#" class="header-menu__page">Комплектация макетов</a>
+            <a href="#layot" class="header-menu__page">Комплектация макетов</a>
             <!-- /.header-menu__page -->
-            <a href="#" class="header-menu__page">Реализованные проекты</a>
+            <a href="#portfolio" class="header-menu__page">Реализованные проекты</a>
             <!-- /.header-menu__page -->
-            <a href="#" class="header-menu__page">Наши клиенты</a>
+            <a href="#clients" class="header-menu__page">Наши клиенты</a>
             <!-- /.header-menu__page -->
-            <a href="#" class="header-menu__page">Контакты</a>
+            <a href="#footer" class="header-menu__page">Контакты</a>
             <!-- /.header-menu__page -->
           </div>
           <!-- /.header-menu -->  
@@ -40,7 +40,7 @@
       <!-- /.container -->
     </div>
     <!-- /.header -->
-  <div class="main">
+  <div class="main" id="main">
     <div class="container">
       <div class="main-mobile">
         <div class="main-mobile_wrap">
@@ -58,7 +58,16 @@
             <a href="" class="main-contacts__callback">Заказать обратный звонок</a>
             <!-- /.header-contacts__callback -->
           </div>
-
+          <div class="close-menu">
+              <div class="close-menu_box">
+                  <a href="#main" class="close-menu_item">Главная</a>
+                  <a href="#layot" class="close-menu_item">Виды макетов</a>
+                  <a href="#layot" class="close-menu_item">Комплектация макетов</a>
+                  <a href="#portfolio" class="close-menu_item">Реализованные проекты</a>
+                  <a href="#clients" class="close-menu_item">Наши клиенты</a>
+                  <a href="#footer" class="close-menu_item">Контакты</a>
+              </div>
+            </div>
         </div>
       </div>
       <div class="main-wrap">
@@ -183,6 +192,11 @@
       $('.menu-burger').on('click', function(e) {
         e.preventDefault;
         $(this).toggleClass('menu-burger-open');
+
+      });
+      $('.menu-burger').on('click', function(e) {
+        e.preventDefault;
+        $('.close-menu').toggleClass('open-menu');
 
       });
     });

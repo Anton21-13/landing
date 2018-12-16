@@ -1,3 +1,12 @@
+@media (max-width: 1900px)
+  .main
+    &-mobile 
+      display: none   
+  
+  
+  
+  
+  
 @media (max-width: 1199px)
   .container
       width: 970px
@@ -6,6 +15,58 @@
       width: 750px
 
 
+
 @media (max-width: 992px)
+  .container
+    width: 740px
   .header
     display: none
+  .main
+    padding-top: 13px
+    &-mobile 
+      display: block
+      margin-bottom: 50px
+    &-text
+      &__title
+        max-width: 400px
+        font-size: 30px
+        line-height: 30px
+    &-client
+      &-wrap
+        margin-bottom: 50px    
+
+@media (max-width: 768px)
+  .container
+    width: 500px
+  .main
+    &-wrap
+      flex-direction: column
+      align-items: center
+    &-client
+      width: 400px
+    &-text
+      &__subtitle
+        margin-top: 30px
+    &-advantages
+      margin-top: 30px
+
+@media (max-width: 576px)
+  .container
+    width: 310px
+  .main
+    &-wrap
+    &-client
+      width: 300px
+    &-text
+      text-align: center
+      &__subtitle
+        margin-top: 30px
+    &-advantages
+      margin-top: 30px
+      &__text
+        text-align: left
+    &-client
+      &-wrap
+        margin-bottom: 20px
+      &__title
+        margin-top: 20px  
