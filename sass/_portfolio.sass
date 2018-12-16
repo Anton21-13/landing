@@ -1,0 +1,84 @@
+.portfolio
+  background-color: $portfolio-bg-color
+  padding-top: 96px
+  padding-bottom: 99px
+  text-align: center
+  &-title
+    position: relative
+    width: 235px
+    margin: 0 auto
+    font-size: 36px
+    &:after
+      content: ""
+      position: absolute
+      bottom: -25px
+      left: 102px
+      width: 31px
+      height: 2px
+      background-color: $button-color
+  &-subtitle  
+    margin-top: 70px
+    margin-bottom: 79px
+    font-size: 20px
+.slider
+  &-wrap
+    margin: 0 auto
+    width: 902px
+    display: flex
+    justify-content: space-between
+  &__item
+    text-align: center
+    &:focus
+      outline: none
+  &-img
+    width: 410px
+    height: 340px
+  &-info
+    text-align: left 
+    width: 410px
+    &_text
+      margin-bottom: 53px
+      font-size: 24px
+    &_subtitle
+      font-size: 16px
+      line-height: 20px
+      margin-bottom: 60px
+      span
+        color: #7f7f7f
+        font-size: 12px
+    &_box
+      display: flex
+      justify-content: space-between
+      &-name
+        font-size: 16px
+        line-height: 20px
+        margin-bottom: 60px
+        span
+          color: #7f7f7f
+          font-size: 12px
+  &__button
+    padding: 25px 49px
+    font-size: 13px
+
+
+
+.arrow
+  width: 14px
+  height: 26px
+  position: absolute
+  z-index: 2
+  &:hover
+    cursor: pointer
+  &_right
+    top: 50%
+    right: 0
+    background: url('../img/arrow_right.png') no-repeat center
+    background-size: 100%
+    transform: translateY(-13px)    
+  &_left
+    top: 50%
+    left: 0
+    background: url('../img/arrow_left.png') no-repeat center
+    background-size: 100%
+    transform: translateY(-13px)
+
