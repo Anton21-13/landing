@@ -4,21 +4,29 @@
   &-title
     margin: 100px 0
     font-size: 24px
+  .slick
+    &-track 
+      display: flex
+      align-items: center  
   
 .slider
   &-2
     &__item
-      text-align: center
-      &:focus
-        outline: none
-      img
-        margin: auto
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 70px
+    &:focus
+      outline: none
+    img
+      margin: auto
+
 
 .arrow
   width: 14px
   height: 26px
   position: absolute
-  z-index: 4
+  z-index: 2
   &:hover
     cursor: pointer
   &_right
@@ -32,5 +40,6 @@
     left: 0
     background: url('../img/arrow_left.png') no-repeat center
     background-size: 100%
-    transform: translateY(-13px)      
+    transform: translateY(-13px)
+      
 
