@@ -655,7 +655,7 @@ template {
 
 .close-menu {
   top: 0;
-  left: -100%;
+  left: -150%;
   position: relative;
   z-index: 2;
   -webkit-transition: 0.3s;
@@ -719,9 +719,11 @@ template {
   content: "";
   position: absolute;
   bottom: -25px;
-  left: 102px;
+  left: 50%;
   width: 31px;
   height: 2px;
+  -webkit-transform: translateX(-15.5px);
+          transform: translateX(-15.5px);
   background-color: #23bac1;
 }
 
@@ -765,13 +767,17 @@ template {
   padding-bottom: 47px;
   border: 1px solid #e8e8e8;
   margin-bottom: 30px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-filter: grayscale(99%);
+          filter: grayscale(99%);
 }
 
 .card:hover {
   -webkit-box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1);
+  -webkit-filter: none;
+          filter: none;
 }
 
 .card__img {
@@ -780,15 +786,8 @@ template {
 }
 
 .card__img-wrap {
-  -webkit-filter: grayscale(99%);
-          filter: grayscale(99%);
   margin-bottom: 39px;
   position: relative;
-}
-
-.card__img-wrap:hover {
-  -webkit-filter: none;
-          filter: none;
 }
 
 .card__img-wrap:after {
@@ -840,6 +839,15 @@ template {
   height: 0;
 }
 
+.card_text-full {
+  max-width: 237px;
+  margin: 0 auto;
+}
+
+.card_text-full:after {
+  height: 0;
+}
+
 .portfolio {
   background-color: #f6f6f6;
   padding-top: 96px;
@@ -849,7 +857,7 @@ template {
 
 .portfolio-title {
   position: relative;
-  width: 235px;
+  width: 420px;
   margin: 0 auto;
   font-size: 36px;
 }
@@ -858,9 +866,11 @@ template {
   content: "";
   position: absolute;
   bottom: -25px;
-  left: 102px;
+  left: 50%;
   width: 31px;
   height: 2px;
+  -webkit-transform: translateX(-15.5px);
+          transform: translateX(-15.5px);
   background-color: #23bac1;
 }
 
@@ -1038,6 +1048,56 @@ template {
           transform: translateY(-13px);
 }
 
+.advantages {
+  background: url("../img/advantages/advantages-bg.jpg");
+  background-size: cover;
+  padding-top: 108px;
+  padding-bottom: 50px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.advantages-title {
+  margin: 0 auto;
+  width: 680px;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 108px;
+}
+
+.advantages-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.aim-wrap {
+  width: 245px;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.aim_img {
+  margin-bottom: 40px;
+}
+
+.aim_img-2 {
+  margin-top: 9px;
+}
+
+.aim_info {
+  font-size: 15px;
+  line-height: 20px;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   color: #000000;
@@ -1071,6 +1131,10 @@ img {
   }
   .slider-wrap {
     width: 900px;
+  }
+  .advantages-wrap {
+    width: 700px;
+    margin: 0 auto;
   }
 }
 
@@ -1114,6 +1178,12 @@ img {
   .slider-info_text {
     margin-top: 53px;
   }
+  .clients {
+    margin-bottom: 50px;
+  }
+  .clients-title {
+    margin: 50px 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1145,6 +1215,27 @@ img {
   .portfolio-subtitle {
     margin-bottom: 30px;
     margin-top: 45px;
+  }
+  .slider__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .advantages {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  .advantages-title {
+    width: 480px;
+    margin-bottom: 50px;
+  }
+  .advantages-wrap {
+    width: 480px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aim-wrap {
+    height: 150px;
   }
 }
 
@@ -1186,16 +1277,23 @@ img {
   .slider-info {
     width: 300px;
   }
-  .slider__button {
-    margin-left: auto;
-    margin-right: auto;
-  }
   .portfolio {
     padding-top: 30px;
     padding-bottom: 10px;
   }
   .portfolio-title {
+    width: 300px;
     font-size: 25px;
+  }
+  .portfolio-subtitle {
+    width: 300px;
+  }
+  .advantages-title {
+    width: 300px;
+    font-size: 18px;
+  }
+  .advantages-wrap {
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
