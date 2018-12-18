@@ -1,0 +1,33 @@
+.footer
+  background-color: $footer-bg-color
+  padding-top: 50px
+  padding-bottom: 58px
+  color: $text-color-2
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-adress
+    font-size: 13px
+    padding-left: 33px
+    width: 185px
+    position: relative
+    &:before
+      margin-top: 5px
+      left: 0
+      position: absolute
+      content: url(../img/footer/icon-01.png)
+      width: 14px
+      height: 18px  
+  &-contacts
+    margin-top: 12px
+    &__tel
+      text-align: right
+      display: block
+      text-decoration: none
+      color: $text-color-2
+      +bold
+      font-size: 17px    
+    &__callback
+      margin-top: 7px
+      color: $button-color     

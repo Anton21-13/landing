@@ -1102,6 +1102,59 @@ template {
   margin-bottom: 4px;
 }
 
+.footer {
+  background-color: #191919;
+  padding-top: 50px;
+  padding-bottom: 58px;
+  color: #ffffff;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-adress {
+  font-size: 13px;
+  padding-left: 33px;
+  width: 185px;
+  position: relative;
+}
+
+.footer-adress:before {
+  margin-top: 5px;
+  left: 0;
+  position: absolute;
+  content: url(../img/footer/icon-01.png);
+  width: 14px;
+  height: 18px;
+}
+
+.footer-contacts {
+  margin-top: 12px;
+}
+
+.footer-contacts__tel {
+  text-align: right;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 17px;
+}
+
+.footer-contacts__callback {
+  margin-top: 7px;
+  color: #23bac1;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   color: #000000;
