@@ -997,6 +997,10 @@ template {
           align-items: center;
 }
 
+.clients .slick-slide:focus {
+  outline: none;
+}
+
 .slider-2__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1099,7 +1103,6 @@ template {
 
 .map {
   height: 416px;
-  margin-bottom: 4px;
 }
 
 .footer {
@@ -1153,6 +1156,74 @@ template {
 .footer-contacts__callback {
   margin-top: 7px;
   color: #23bac1;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+}
+
+.modal_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-client {
+  background-color: #ffffff;
+  color: #000000;
+  width: 370px;
+  position: relative;
+  height: 450px;
+}
+
+.modal-client-wrap {
+  text-align: center;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.modal-client__title {
+  font-size: 18px;
+  width: 240px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+.modal-client__title span {
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+
+.modal-client__input {
+  display: block;
+  width: 212px;
+  margin-bottom: 15px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-close:hover {
+  cursor: pointer;
 }
 
 body {
@@ -1294,14 +1365,24 @@ img {
   .aim-wrap {
     height: 150px;
   }
+  .card {
+    -webkit-filter: none;
+            filter: none;
+  }
 }
 
 @media (max-width: 576px) {
   .container {
     width: 310px;
   }
+  .main-wrap {
+    margin-bottom: 20px;
+  }
   .main-client {
     width: 300px;
+  }
+  .main-client__title {
+    margin-top: 20px;
   }
   .main-text {
     text-align: center;
@@ -1314,12 +1395,6 @@ img {
   }
   .main-advantages__text {
     text-align: left;
-  }
-  .main-client-wrap {
-    margin-bottom: 20px;
-  }
-  .main-client__title {
-    margin-top: 20px;
   }
   .slider {
     height: 700px;
@@ -1351,6 +1426,37 @@ img {
   }
   .advantages-wrap {
     width: 300px;
+  }
+  .layout-subtitle {
+    margin-bottom: 40px;
+  }
+  .card {
+    margin-bottom: 0;
+  }
+  .clients-title {
+    margin-bottom: 30px;
+  }
+  .map {
+    height: 300px;
+  }
+  .footer {
+    padding: 30px 0;
+  }
+  .footer-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-contacts__tel {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .modal-client {
+    width: 300px;
+  }
+  .modal-client__title {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

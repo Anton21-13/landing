@@ -1,0 +1,43 @@
+.modal
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.52)
+  left: 0
+  top: 0
+  z-index: 99
+  display: flex
+  display: none
+  &_visible
+    display: flex
+    justify-content: center
+    align-items: center
+  &-client
+    background-color: $text-color-2
+    color: $text-color
+    width: 370px
+    position: relative
+    height: 450px
+    &-wrap
+      text-align: center
+      width: 260px
+      margin: 0 auto
+    &__title
+      font-size: 18px
+      width: 240px
+      margin: 0 auto
+      margin-top: 40px
+      margin-bottom: 28px
+      span
+        +bold
+    &__input
+      display: block
+      width: 212px
+      margin-bottom: 15px 
+ 
+  &-close
+    position: absolute
+    top: 15px
+    right: 15px
+    &:hover
+      cursor: pointer

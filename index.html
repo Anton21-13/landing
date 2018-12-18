@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Макетная мастерская</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -17,20 +18,20 @@
             <!-- /.header-menu__page -->
             <a href="#layout" class="header-menu__page">Виды макетов</a>
             <!-- /.header-menu__page -->
-            <a href="#layot" class="header-menu__page">Комплектация макетов</a>
+            <a href="#layout" class="header-menu__page">Комплектация макетов</a>
             <!-- /.header-menu__page -->
             <a href="#portfolio" class="header-menu__page">Реализованные проекты</a>
             <!-- /.header-menu__page -->
             <a href="#clients" class="header-menu__page">Наши клиенты</a>
             <!-- /.header-menu__page -->
-            <a href="#footer" class="header-menu__page">Контакты</a>
+            <a href="#map" class="header-menu__page">Контакты</a>
             <!-- /.header-menu__page -->
           </div>
           <!-- /.header-menu -->  
           <div class="header-contacts">
             <a class="header-contacts__tel" href="tel:+78008913333">8 800 891-33-33</a>
             <!-- /.header-contacts__tel -->
-            <a href="" class="header-contacts__callback">Заказать обратный звонок</a>
+            <a href="#modal-callback" class="header-contacts__callback modal-open">Заказать обратный звонок</a>
             <!-- /.header-contacts__callback -->
           </div>
           <!-- /.header-contacts -->
@@ -55,18 +56,18 @@
           <div class="main-contacts">
             <a class="main-contacts__tel" href="tel:+78008913333">8 800 891-33-33</a>
             <!-- /.header-contacts__tel -->
-            <a href="" class="main-contacts__callback">Заказать обратный звонок</a>
+            <a href="#modal-callback" class="main-contacts__callback modal-open">Заказать обратный звонок</a>
             <!-- /.header-contacts__callback -->
           </div>          
         </div>
         <div class="close-menu">
           <div class="close-menu_box">
-              <a href="#main" class="close-menu_item">Главная</a>
-              <a href="#layout" class="close-menu_item">Виды макетов</a>
-              <a href="#layout" class="close-menu_item">Комплектация макетов</a>
-              <a href="#portfolio" class="close-menu_item">Реализованные проекты</a>
-              <a href="#clients" class="close-menu_item">Наши клиенты</a>
-              <a href="#footer" class="close-menu_item">Контакты</a>
+            <a href="#main" class="close-menu_item">Главная</a>
+            <a href="#layout" class="close-menu_item">Виды макетов</a>
+            <a href="#layout" class="close-menu_item">Комплектация макетов</a>
+            <a href="#portfolio" class="close-menu_item">Реализованные проекты</a>
+            <a href="#clients" class="close-menu_item">Наши клиенты</a>
+            <a href="#map" class="close-menu_item">Контакты</a>
           </div>
         </div>
       </div>
@@ -147,7 +148,7 @@
             <div class="card_text">Административные здания</div>
             <div class="card_text-last">Гостиницы и санатории</div>
           </div>
-          <button type="submit" class="button form__button layout__button">расчитать стоимость</button>
+          <button type="submit" class="button form__button layout__button modal-open">расчитать стоимость</button>
         </div>
         <div class="card wow fadeInDown" data-wow-delay="0.3s">
           <h4 class="card__title">Градостроительные макеты</h4>
@@ -162,7 +163,7 @@
             <div class="card_text">Территории</div>
             <div class="card_text-last">Мосты и тоннели</div>
           </div>
-          <button type="submit" class="button form__button layout__button">расчитать стоимость</button>
+          <button type="submit" class="button form__button layout__button modal-open">расчитать стоимость</button>
         </div>
         <div class="card wow fadeInRight" data-wow-delay="0.3s">
           <h4 class="card__title">Промышленные макеты</h4>
@@ -178,7 +179,7 @@
             <div class="card_text">Производственные линии</div>
             <div class="card_text-last">Технологические линии</div>            
           </div>
-          <button type="submit" class="button form__button layout__button">расчитать стоимость</button>
+          <button type="submit" class="button form__button layout__button modal-open">расчитать стоимость</button>
         </div>
         <div class="card wow fadeInLeft" data-wow-delay="0.3s">
           <h4 class="card__title">Интерьерные макеты</h4>
@@ -194,7 +195,7 @@
             <div class="card_text">Торговые центры</div>
             <div class="card_text-last">Заводы</div>
           </div>
-          <button type="submit" class="button form__button layout__button">расчитать стоимость</button>
+          <button type="submit" class="button form__button layout__button modal-open">расчитать стоимость</button>
         </div>
         <div class="card wow fadeInUp" data-wow-delay="0.3s">
           <h4 class="card__title">Ландшафтные макеты</h4>
@@ -209,7 +210,7 @@
             <div class="card_text">Рельефы местности</div>
             <div class="card_text-last">Участки</div>
           </div>
-          <button type="submit" class="button form__button layout__button">расчитать стоимость</button>
+          <button type="submit" class="button form__button layout__button modal-open">расчитать стоимость</button>
         </div>
         <div class="card wow fadeInRight" data-wow-delay="0.3s">
           <h4 class="card__title">Индивидуальные макеты</h4>
@@ -220,7 +221,7 @@
             <div class="card_text-full">Мы может воплотить в жизнь любые идеи, с применением высоких технологий, максимальной детализацией 
                 и&nbsp;совершенно любых размеров</div>
           </div>
-          <button type="submit" class="button form__button layout__button">расчитать стоимость</button>
+          <button type="submit" class="button form__button layout__button modal-open">расчитать стоимость</button>
         </div>
       </div>
       <!-- /.price-wrap -->
@@ -255,7 +256,7 @@
                     <span>Срок изготовления:</span><br>40 дней
                   </div>
                 </div>
-                <button type="submit" class="button form__button slider__button">заказать макет</button>
+                <button type="submit" class="button form__button slider__button modal-open">заказать макет</button>
               </div>
             </div>
           </div>
@@ -280,7 +281,7 @@
                     <span>Срок изготовления:</span><br>10 дней
                   </div>
                 </div>
-                <button type="submit" class="button form__button slider__button">заказать макет</button>
+                <button type="submit" class="button form__button slider__button modal-open">заказать макет</button>
               </div>
             </div>
           </div>          
@@ -304,7 +305,7 @@
         </div>        
         <div class="aim-wrap">
           <div class="aim_img">
-            <img src="img/advantages/aim-02.png" alt="цель1">
+            <img src="img/advantages/aim-02.png" alt="цель2">
           </div>
           <div class="aim_info">
             Привлечь инвестиции<br>в проект.
@@ -312,7 +313,7 @@
         </div>        
         <div class="aim-wrap">
           <div class="aim_img aim_img-2">
-            <img src="img/advantages/aim-03.png" alt="цель1">
+            <img src="img/advantages/aim-03.png" alt="цель3">
           </div>
           <div class="aim_info">
               Наглядно представить объект посетителю с целью ознакомления
@@ -321,7 +322,7 @@
         </div>        
         <div class="aim-wrap">
           <div class="aim_img">
-            <img src="img/advantages/aim-04.png" alt="цель1">
+            <img src="img/advantages/aim-04.png" alt="цель4">
           </div>
           <div class="aim_info">
               Представить проект<br>первым лицам государства, компании.
@@ -329,7 +330,7 @@
         </div>        
         <div class="aim-wrap">
           <div class="aim_img">
-            <img src="img/advantages/aim-05.png" alt="цель1">
+            <img src="img/advantages/aim-05.png" alt="цель5">
           </div>
           <div class="aim_info">
             Обучение сотрудников, военнослужащих, студентов<br>и т.д.
@@ -337,7 +338,7 @@
         </div>        
         <div class="aim-wrap">
           <div class="aim_img">
-            <img src="img/advantages/aim-06.png" alt="цель1">
+            <img src="img/advantages/aim-06.png" alt="цель6">
           </div>
           <div class="aim_info">
             Получить разрешение на строительство, согласование проекта.
@@ -345,7 +346,7 @@
         </div>        
         <div class="aim-wrap">
           <div class="aim_img">
-            <img src="img/advantages/aim-07.png" alt="цель1">
+            <img src="img/advantages/aim-07.png" alt="цель7">
           </div>
           <div class="aim_info">
               Бизнес подарок.
@@ -353,7 +354,7 @@
         </div>        
         <div class="aim-wrap">
           <div class="aim_img">
-            <img src="img/advantages/aim-08.png" alt="цель1">
+            <img src="img/advantages/aim-08.png" alt="цель8">
           </div>
           <div class="aim_info">
             Дополнить интерьер.
@@ -402,20 +403,39 @@
     <!-- /.container -->
   </div>
   
-  <div class="map">
+  <div class="map" id="map">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.466886943323!2d37.53594858426654!3d55.84987303003794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1545116450808" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
-  <div class="footer">
+  <div class="footer" id="footer">
     <div class="container">
       <div class="footer-wrap">
         <div class="footer-adress">г. Москва, Автомоторная улица, 4А, стр.21</div>
         <div class="footer-contacts">
           <a class="footer-contacts__tel" href="tel:+78008913333">8 800 891-33-33</a>
           <!-- /.header-contacts__tel -->
-          <a href="" class="header-contacts__callback">Заказать обратный звонок</a>
+          <a href="#modal-callback" class="header-contacts__callback modal-open">Заказать обратный звонок</a>
           <!-- /.header-contacts__callback -->
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-callback">
+    <div class="modal-client">
+      <div class="modal-client-wrap">
+        <div class="modal-client__title">Оставьте заявку и получите расчет стоимость макета 
+          в течение <span>30 минут</span>
+        </div>
+        <div class="modal-client__form">
+          <form action="send.php" class="js-ajax">
+            <input type="text" name="fio" class="input input-name form__input main-client__input" required placeholder="Ваше имя">
+            <input type="tel" name="phone" class="input input-phone form__input main-client__input" pattern="+7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" maxlength="13" required placeholder="Контактный телефон">
+            <input type="email" name="mail" class="input input-mail form__input main-client__input" required placeholder="Электронная почта">
+            <button type="submit" class="button form__button">расчет</button>
+          </form>
+        </div>
+        <div class="modal-close">&#10006;</div>
       </div>
     </div>
   </div>
@@ -429,6 +449,22 @@
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
 
+  <script src="js/jquery.maskedinput.min.js"></script>
+
+
+
+  <script>
+    $(document).ready( function(){
+      $('.modal-open').on('click', function() {
+        $('#modal-callback').toggleClass('modal_visible')
+
+      });
+      $('.modal-close').on('click', function() {
+        $('#modal-callback').toggleClass('modal_visible')
+
+      });
+    });
+    </script>
 
   <script>
     $(document).ready(function(){
@@ -528,6 +564,8 @@
         return false;
       });
 
+      $("input[type='tel']").mask("+7 (999) 99-99-999");
+
       $('.menu-burger').on('click', function(e) {
         e.preventDefault;
         $(this).toggleClass('menu-burger-open');
@@ -546,12 +584,15 @@
       });
     });
 
+
+
   </script>
-  <script>
+
+  <!--<script>
     document.querySelector('#button-callback').addEventListener('click', function() {
       yaCounter51482977.reachGoal('btn'); return true;
     })
-  </script>
+  </script>-->
       
   <script src="js/slick.min.js"></script>
   </body>
