@@ -1097,6 +1097,11 @@ template {
   line-height: 20px;
 }
 
+.map {
+  height: 416px;
+  margin-bottom: 4px;
+}
+
 body {
   font-family: 'Proxima Nova Regular', sans-serif;
   color: #000000;
