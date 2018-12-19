@@ -433,6 +433,12 @@ template {
   color: #000000;
 }
 
+.header-menu__page:hover {
+  color: #23bac1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .header-contacts {
   margin-top: 12px;
 }
@@ -446,9 +452,21 @@ template {
   font-size: 17px;
 }
 
+.header-contacts__tel:hover {
+  color: #23bac1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .header-contacts__callback {
   margin-top: 7px;
   color: #23bac1;
+}
+
+.header-contacts__callback:hover {
+  color: #23bac1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main {
@@ -476,10 +494,12 @@ template {
   margin-top: 0;
   max-width: 510px;
   font-size: 48px;
+  font-weight: 400;
   line-height: 60px;
 }
 
 .main-text__subtitle {
+  font-family: 'Proxima Nova Light', sans-serif;
   margin-top: 49px;
   font-size: 20px;
 }
@@ -494,6 +514,7 @@ template {
           flex-direction: column;
   margin-top: 63px;
   width: 300px;
+  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 .main-advantages__item {
@@ -713,6 +734,7 @@ template {
   width: 235px;
   margin: 0 auto;
   font-size: 36px;
+  font-weight: 400;
 }
 
 .layout-title:after {
@@ -731,6 +753,7 @@ template {
   margin-top: 70px;
   margin-bottom: 79px;
   font-size: 20px;
+  font-weight: 300;
 }
 
 .layout-wrap {
@@ -813,6 +836,7 @@ template {
   margin: 0 auto;
   margin-top: 33px;
   margin-bottom: 24px;
+  font-weight: 400;
   font-size: 20px;
 }
 
@@ -917,6 +941,7 @@ template {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 60px;
+  font-weight: 300;
 }
 
 .slider-info_subtitle span {
@@ -937,6 +962,7 @@ template {
   font-size: 16px;
   line-height: 20px;
   margin-bottom: 60px;
+  font-weight: 300;
 }
 
 .slider-info_box-name span {
@@ -1066,6 +1092,8 @@ template {
   font-size: 24px;
   line-height: 31px;
   margin-bottom: 108px;
+  font-weight: 400;
+  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 .advantages-wrap {
@@ -1099,6 +1127,7 @@ template {
 .aim_info {
   font-size: 15px;
   line-height: 20px;
+  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 .map {
@@ -1127,8 +1156,9 @@ template {
 .footer-adress {
   font-size: 13px;
   padding-left: 33px;
-  width: 185px;
+  width: 187px;
   position: relative;
+  font-family: 'Proxima Nova Light', sans-serif;
 }
 
 .footer-adress:before {
@@ -1457,6 +1487,12 @@ img {
   }
   .modal-client__title {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .slider-info {
+    width: 280px;
   }
 }
 /*# sourceMappingURL=style.css.map */

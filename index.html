@@ -404,13 +404,13 @@
   </div>
   
   <div class="map" id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.466886943323!2d37.53594858426654!3d55.84987303003794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1545116450808" style="width:100%; height: 100%" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.466886943323!2d37.53594858426654!3d55.84987303003794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1545116450808" style="width:100%; height: 100%; border: 0" allowfullscreen></iframe>
   </div>
 
   <div class="footer" id="footer">
     <div class="container">
       <div class="footer-wrap">
-        <div class="footer-adress">г. Москва, Автомоторная улица, 4А, стр.21</div>
+        <div class="footer-adress">г. Москва,<br>Автомоторная улица, 4А, стр.21</div>
         <div class="footer-contacts">
           <a class="footer-contacts__tel" href="tel:+78008913333">8 800 891-33-33</a>
           <!-- /.header-contacts__tel -->
@@ -486,6 +486,15 @@
             breakpoint: 769,
             settings: {
               slidesToShow: 1,
+              slidesToScroll: 1
+              
+            }
+          },
+
+          {
+            breakpoint: 576,
+            settings: {
+              slidesToShow: 1,
               slidesToScroll: 1,
               arrows: false
               
@@ -502,7 +511,7 @@
         prevArrow: '<div class="arrow arrow_left"></div>',
         responsive: [
           {
-            breakpoint: 1900,
+            breakpoint: 1940,
             settings: {
               slidesToShow: 5,
               slidesToScroll: 1
@@ -525,11 +534,10 @@
           },
           
           {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
               slidesToShow: 2,
-              slidesToScroll: 1,
-              arrows: false
+              slidesToScroll: 1
               
             }
           },
