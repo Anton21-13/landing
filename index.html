@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Макетная мастерская</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/slick.css">
@@ -30,7 +31,7 @@
           <div class="header-contacts">
             <a class="header-contacts__tel" href="tel:+78008913333">8 800 891-33-33</a>
             <!-- /.header-contacts__tel -->
-            <a href="#modal-callback" class="header-contacts__callback modal-open">Заказать обратный звонок</a>
+            <a href="#modal-callback" class="header-contacts__callback modal-open callback">Заказать обратный звонок</a>
             <!-- /.header-contacts__callback -->
           </div>
           <!-- /.header-contacts -->
@@ -128,7 +129,7 @@
   </div>
   <!-- /.main -->
 
-  <section class="layout" id="layout">
+  <div class="layout" id="layout">
     <div class="container">
       <h2 class="layout-title">Виды макетов</h2>
       <h3 class="layout-subtitle">Создаем макеты от небольших домов до космических станций</h3>
@@ -226,10 +227,10 @@
       <!-- /.price-wrap -->
     </div>
     <!-- /.container -->
-  </section>
+  </div>
   <!-- /.layout -->
 
-  <section class="portfolio" id="portfolio">
+  <div class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio-title">Реализованные проекты</div>
         <div class="portfolio-subtitle">Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</div>
@@ -287,7 +288,7 @@
         </div>
       </div>
       <!-- /.container -->
-    </section>
+    </div>
 
   <div class="advantages" id="advantages">
     <div class="container">
@@ -403,7 +404,7 @@
   </div>
   
   <div class="map" id="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.466886943323!2d37.53594858426654!3d55.84987303003794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1545116450808" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3167.466886943323!2d37.53594858426654!3d55.84987303003794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b537bf9668ac29%3A0x18dfd9d5b810d58b!2z0JDQstGC0L7QvNC-0YLQvtGA0L3QsNGPINGD0LsuLCA00JAg0YHRgtGA0L7QtdC90LjQtSAyMSwg0JzQvtGB0LrQstCwLCAxMjU0Mzg!5e0!3m2!1sru!2sru!4v1545116450808" style="width:100%; height: 100%" allowfullscreen></iframe>
   </div>
 
   <div class="footer" id="footer">
@@ -413,7 +414,7 @@
         <div class="footer-contacts">
           <a class="footer-contacts__tel" href="tel:+78008913333">8 800 891-33-33</a>
           <!-- /.header-contacts__tel -->
-          <a href="#modal-callback" class="header-contacts__callback modal-open">Заказать обратный звонок</a>
+          <a href="#modal-callback" class="header-contacts__callback modal-open callback">Заказать обратный звонок</a>
           <!-- /.header-contacts__callback -->
         </div>
       </div>
@@ -587,8 +588,8 @@
   </script>
 
   <script>
-    document.querySelector('#button-callback').addEventListener('click', function() {
-      yaCounter51482977.reachGoal('btn'); return true;
+    document.querySelector('.callback').addEventListener('click', function() {
+      yaCounter51631115.reachGoal('btn'); return true;
     });
   </script>
   <!-- Yandex.Metrika counter -->
